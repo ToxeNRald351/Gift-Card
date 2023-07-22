@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Gift Card</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    </head>
+    <body>
+        <div class="header">
+            <h1>Сегодня День Рождения Урти!</h1>
+            <img id="bff-img" src="images/urti-pony.jpg">
+            <h2 id="bday-age">25 лет</h2>
+            <h4 id="bday-date">23.07.1998</h4>
+        </div>
+        <div class="gift-section">
+            <h2 class="gift-text">Вот как я рад за тебя в этот день!</h2>
+            <h3 id="gift-hint">(наведи курсор на подарок)</h3>
+            <div id="gift-happy" class="gift-cover"></div>
+            
+            <h2 class="gift-text">Реакция остальных, когда Урти заходит в комнату</h2>
+            <div id="gift-hot" class="gift-cover"></div>
+
+            <h2 class="gift-text">Если бы мне нужно было описать тебя одной картинкой</h2>
+            <div id="gift-oneword" class="gift-cover"></div>
+
+            <h2 class="gift-text">Единственный настолько же крутой человек как ты</h2>
+            <div id="gift-badass" class="gift-cover"></div>
+        </div>
+        <h2 class="gift-text">А теперь давайте посмотрим и восхитимся невероятными работами, которые Ты создала за прошедший год</h2>
+        <div class="gallery">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="kartinka">
+                            <img src="images/lighthouse.jpg">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="kartinka">
+                            <img src="images/volodya.jpg">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="kartinka">
+                            <img src="images/leviathan.jpg">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="kartinka">
+                            <img src="images/misch-bug.jpg">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="kartinka">
+                            <img src="images/pony-urti.jpg">
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="kartinka">
+                            <img src="images/ruin.jpg">
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="kartinka">
+                            <img src="images/sea-monster.jpg">
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="kartinka">
+                            <img src="images/pony-tal.jpg">
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+        <div class="gift-section">
+            <h2 class="gift-text">За тебя, друг мой!</h2>
+            <div id="gift-cheers" class="gift-cover"></div>
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+                // Optional parameters
+                loop: true,
+                
+                // If we need pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        </script>
+    </body>
+</html>
